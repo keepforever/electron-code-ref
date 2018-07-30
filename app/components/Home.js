@@ -26,7 +26,7 @@ export default class Home extends Component<Props> {
       <div>
         <div className={styles.container} data-tid="container">
           <h2>Home</h2>
-          <Link to="/counter">Lick my balls</Link>
+          <Link to="/counter">Counter</Link>
           {Languages.vals.map((lang, index) => {
             return (
               <div className={styles.languages} key={index}>
