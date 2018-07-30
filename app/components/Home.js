@@ -21,6 +21,7 @@ export default class Home extends Component<Props> {
       title: 'Tasks',
       vals: ['Text Input', 'Machiene Learning']
     }
+
     return (
       <div>
         <div className={styles.container} data-tid="container">
@@ -28,7 +29,7 @@ export default class Home extends Component<Props> {
           <Link to="/counter">Lick my balls</Link>
           {Languages.vals.map((lang, index) => {
             return (
-              <div style={{height: 100, width: 100}} key={index}>
+              <div className={styles.languages} key={index}>
                 <h3>{lang}</h3>
               </div>
             )
