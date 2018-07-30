@@ -1,8 +1,13 @@
-Spin up order
+#### Start Dev Server and Open Electron App: 
 
+```bash
+$ npm run dev || yarn dev
+```
 
-# Everything below this line is the README.MD that came with the Boiler.
 <hr />
+<hr />
+# Everything below this line is the README.MD that came with the Boiler.
+
 ### electron-react-boilerplate
 
 ### A Boilerplate for Scalable Cross-Platform Desktop Apps
