@@ -8,6 +8,7 @@ const navigationItems = ( props ) => {
     return (
         <ul className={classes.NavigationItems}>
             <NavigationItem link="/">To Slash</NavigationItem>
+            <NavigationItem link="/counter">Counter</NavigationItem>
         </ul>
     )
 };

@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './NewHome.css';
+import styles from './home.css';
 
 type Props = {};
 
@@ -9,18 +9,6 @@ export default class NewHome extends Component<Props> {
   props: Props;
 
   render() {
-    const Languages = {
-      title: 'Languages',
-      vals: ['python', 'javascript', 'c++'],
-    }
-    const Frameworks = {
-      title: 'Frameworks',
-      vals: ['React', 'Angular', 'Flask']
-    }
-    const Tasks = {
-      title: 'Tasks',
-      vals: ['Text Input', 'Machiene Learning']
-    }
 
     return (
       <div>
@@ -34,7 +22,21 @@ export default class NewHome extends Component<Props> {
             )
           })}
         </div>
+        <Link to="/counter">Counter</Link>
       </div>
     );
   }
+}
+
+const Languages = {
+  title: 'Languages',
+  vals: ['python', 'javascript', 'c++'],
+}
+const Frameworks = {
+  title: 'Frameworks',
+  vals: ['React', 'Angular', 'Flask']
+}
+const Tasks = {
+  title: 'Tasks',
+  vals: ['Text Input', 'Machiene Learning']
 }

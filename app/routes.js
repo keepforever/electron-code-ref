@@ -4,13 +4,16 @@ import { Switch, Route } from 'react-router';
 import App from './containers/App';
 import HomePage from './containers/HomePage';
 import CounterPage from './containers/CounterPage';
+import AddSnippitPage from './containers/AddSnippitPage';
+import addSnippitView from './components/views/addSnippit'
 
-import Toolbar from './components/Toolbar/Toolbar'
+import Toolbar from './components/layout/Toolbar/Toolbar';
 
 export default () => (
   <App>
     <Toolbar />
     <Switch>
+      <Route path="/snippit" component={AddSnippitPage} />
       <Route path="/counter" component={CounterPage} />
       <Route path="/" component={HomePage} />
     </Switch>
