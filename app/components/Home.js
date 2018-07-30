@@ -9,18 +9,6 @@ export default class Home extends Component<Props> {
   props: Props;
 
   render() {
-    const Languages = {
-      title: 'Languages',
-      vals: ['python', 'javascript', 'c++'],
-    }
-    const Frameworks = {
-      title: 'Frameworks',
-      vals: ['React', 'Angular', 'Flask']
-    }
-    const Tasks = {
-      title: 'Tasks',
-      vals: ['Text Input', 'Machiene Learning']
-    }
 
     return (
       <div>
@@ -39,3 +27,19 @@ export default class Home extends Component<Props> {
     );
   }
 }
+
+
+const dummyData = [
+  Languages: {
+    title: 'Languages',
+    vals: ['python', 'javascript', 'c++'],
+  },
+  Frameworks: {
+    title: 'Frameworks',
+    vals: ['React', 'Angular', 'Flask']
+  },
+  Tasks: {
+    title: 'Tasks',
+    vals: ['Text Input', 'Machiene Learning']
+  }
+]
